@@ -33,7 +33,7 @@ module Mongo
                 update,
                 { :new => true }
               )
-            rescue Moped::OperationFailure
+            rescue Moped::Errors::OperationFailure
               doc = nil
             end  
 
